@@ -48,7 +48,9 @@ passport.serializeUser(Account.serializeUser());
 passport.deserializeUser(Account.deserializeUser());
 
 // mongoose
-mongoose.connect('mongodb://localhost/LMS');
+//mongoose.connect('mongodb://localhost/LMS');
+mongoose.connect('mongodb://lldsaldanha@gmail.com:dbpass@host:port/dbname');
+
 
 // routes
 require('./routes/login')(app);
